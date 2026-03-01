@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Réservation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<nav>
+    <h2>🚌 Dissa expess bus busTicket</h2>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <div id="authSection">
+        <h2>Connexion</h2>
+        <input type="email" id="emailAuth" placeholder="Email">
+        <input type="password" id="passAuth" placeholder="Mot de passe">
+        <button onclick="inscrire()">S'inscrire</button>
+        <button onclick="connecter()">Se connecter</button>
+    </div>
+
+    <h1>Réserver un billet</h1>
+
+    <form onsubmit="rechercherBus(event)">
+        <input type="text" id="depart" placeholder="Ville départ" required>
+        <input type="text" id="arrivee" placeholder="Ville arrivée" required>
+        <input type="date" id="date" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <div id="resultats" class="hidden"></div>
+
+    <div id="reservationForm" class="hidden">
+        <h2 id="infoTrajet"></h2>
+        <form onsubmit="confirmerReservation(event)">
+            <input type="text" id="nomClient" placeholder="Nom complet" required>
+            <select id="siege">
+                <option>Siège 1</option>
+                <option>Siège 2</option>
+                <option>Siège 3</option>
+                <option>Siège 4</option>
+                <option>Siège 5</option>
+                <option>Siège 6</option>
+                <option>Siège 7</option>
+                <option>Siège 8</option>
+                <option>Siège 9</option>
+                <option>Siège 10</option>
+                <option>Siège 11</option>
+                <option>Siège 12</option>
+                <option>Siège 13</option>
+                <option>Siège 14</option>
+                <option>Siège 15</option>
+                <option>Siège 16</option>
+                <option>Siège 17</option>
+                <option>Siège 18</option>
+                <option>Siège 19</option>
+                <option>Siège 20</option>
+                <option>Siège 21</option>
+                <option>Siège 22</option>
+                <option>Siège 23</option>
+                <option>Siège 24</option>
+                <option>Siège 25</option>
+                <option>Siège 26</option>
+                <option>Siège 27</option>
+                <option>Siège 28</option>
+                <option>Siège 29</option>
+                <option>Siège 30</option>
+                <option>Siège 31</option>
+                <option>Siège 32</option>
+                <option>Siège 33</option>
+                <option>Siège 34</option>
+                <option>Siège 35</option>
+            </select>
+            <button type="submit">Confirmer</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>© 2026 Dissa express busTicket</footer>
+
+</body>
+</html>
